@@ -24,7 +24,6 @@ const Calculator = () => {
       return newData;
     });
   };
-
   return (
     <div style={{ width: '50%' }}>
       <div className="container">
