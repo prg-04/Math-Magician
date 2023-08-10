@@ -1,8 +1,8 @@
 import React from 'react';
-import keys from './constants/constants';
+import keys from '../constants/constants';
 
 const Calculator = () => (
-  <div>
+  <div style={{ width: '50%' }}>
     <div className="container">
       <div className="display">0</div>
       <Button />
