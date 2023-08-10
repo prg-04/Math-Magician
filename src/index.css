@@ -47,3 +47,15 @@ code {
   font-size: 1.4rem;
   border: 1px solid #ccc;
 }
+
+.app {
+  display: flex;
+  width: 100%;
+}
+
+.quote {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5rem;
+}
