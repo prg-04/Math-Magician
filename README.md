@@ -15,7 +15,6 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 # 📖 [Math-Magician] <a name="about-project"></a>
@@ -77,7 +76,7 @@ Install this project with:
   - npm start
 
 
-### Deployment
+### Deployment <a name="triangular_flag_on_post-deployment">
 
 You can deploy this project using:
 - Free deployment services like GitHub pages.
@@ -91,8 +90,8 @@ You can deploy this project using:
 
 
 - GitHub: [@githubhandle](https://github.com/prg-04)
-- Twitter: [@twitterhandle](https://twitter.com/Evanso-044)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/Evanson-Karanja)
+- Twitter: [@twitterhandle](https://twitter.com/Evans1425Sean)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/evanson-karanja-3549841b8/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

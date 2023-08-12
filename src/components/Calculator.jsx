@@ -24,9 +24,8 @@ const Calculator = () => {
       return newData;
     });
   };
-
   return (
-    <div>
+    <div style={{ width: '50%' }}>
       <div className="container">
         <div className="display">{num || 0}</div>
         <Button handleClick={handleClick} calculatorData={calculatorData} />
