@@ -15,7 +15,6 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 # 📖 [Math-Magician] <a name="about-project"></a>
@@ -77,7 +76,7 @@ Install this project with:
   - npm start
 
 
-### Deployment
+### Deployment <a name="triangular_flag_on_post-deployment">
 
 You can deploy this project using:
 - Free deployment services like GitHub pages.
