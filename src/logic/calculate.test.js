@@ -1,5 +1,4 @@
-import calculate, { isNumber } from './calculate';
-import operate from './operate';
+import calculate from './calculate';
 
 describe('calculate', () => {
   test('should clear calculator data when "AC" button is pressed', () => {

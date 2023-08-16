@@ -1,6 +1,5 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client'; // Import createRoot
-import render from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import Quotes from './Quotes';
 
