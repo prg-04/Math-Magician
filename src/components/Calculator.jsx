@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import keys from '../constants/constants';
+import { keys } from '../constants/constants';
 import calculate from '../logic/calculate';
+import { StyledButton, StyledH3 } from '../Styled';
 
 const Calculator = () => {
   const [num, setNum] = useState(0);
@@ -25,7 +26,8 @@ const Calculator = () => {
     });
   };
   return (
-    <div style={{ width: '50%' }}>
+    <div className="calc">
+      <StyledH3 desktop="8rem">Let&apos;s do some math!</StyledH3>
       <div className="container">
         <div className="display">{num || 0}</div>
         <Button handleClick={handleClick} calculatorData={calculatorData} />
@@ -37,21 +39,14 @@ const Calculator = () => {
 const Button = ({ handleClick }) => (
   <>
     {keys.map((key, idx) => (
-      <button
+      <StyledButton
         type="button"
         key={key}
-        className="button"
         onClick={() => handleClick(key)}
-        style={{
-          gridColumn: idx === 16 ? 'span 2' : 'auto',
-          backgroundColor:
-            idx === 3 || idx === 7 || idx === 11 || idx === 15 || idx === 18
-              ? '#ffb500'
-              : 'inherit',
-        }}
+        idx={idx}
       >
         {key}
-      </button>
+      </StyledButton>
     ))}
   </>
 );

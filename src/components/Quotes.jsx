@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { StyledH2, Styledp } from '../Styled';
 
 const Quotes = () => {
   const [quote, setQuote] = useState('');
@@ -19,10 +20,10 @@ const Quotes = () => {
 
   return (
     <div className="quote">
-      <h2 style={{ alignSelf: 'center' }}>Quote of the day</h2>
-      <p style={{ textAlign: 'center', fontSize: '18px' }}>
-        {quote || 'Loading...'}
-      </p>
+      <StyledH2 fontSize="1.9rem" color="lightseagreen">
+        Quote of the day
+      </StyledH2>
+      <Styledp>{quote || 'Loading...'}</Styledp>
     </div>
   );
 };
