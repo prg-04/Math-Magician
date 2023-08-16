@@ -27,7 +27,7 @@ const Calculator = () => {
   };
   return (
     <div className="calc">
-      <StyledH3>Let&apos;s do some math!</StyledH3>
+      <StyledH3 desktop="8rem">Let&apos;s do some math!</StyledH3>
       <div className="container">
         <div className="display">{num || 0}</div>
         <Button handleClick={handleClick} calculatorData={calculatorData} />
