@@ -8,7 +8,7 @@ const Quotes = () => {
     const url = 'https://api.api-ninjas.com/v1/quotes?category=learning';
     fetch(url, {
       headers: {
-        'x-Api-Key': 'fAPtdgymqgyTlllzbvBkHw==xh7QTqNdg39f8ojz',
+        'x-Api-Key': process.env.REACT_APP_API_KEY,
       },
     })
       .then((response) => response.json())

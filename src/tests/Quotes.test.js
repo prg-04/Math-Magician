@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client'; // Import createRoot
 import '@testing-library/jest-dom/extend-expect';
-import Quotes from './Quotes';
+import Quotes from '../components/Quotes';
 
 describe('Quotes component', () => {
   it('displays loading when fetching quote', () => {

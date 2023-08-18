@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import Calculator from './Calculator';
+import Calculator from '../components/Calculator';
 
 describe('Calculator component', () => {
   test('renders without crashing', () => {
