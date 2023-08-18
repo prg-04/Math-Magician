@@ -18,6 +18,7 @@
 - [📝 License](#license)
 
 # 📖 [Math-Magician] <a name="about-project"></a>
+[Live Demo](https://mathemagician-io.netlify.app/)
 
 > **[Math magicians]** is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
 
