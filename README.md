@@ -54,8 +54,6 @@ In order to run this project you need:
 - A Node.js installed on your local system.
 - A browser of you choice.
 - A text editor of your choice.
-
-
 ### Setup
 
 Clone this repository to your desired folder:
