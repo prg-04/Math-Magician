@@ -1,34 +1,58 @@
-import React from 'react';
-import keys from './constants/constants';
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import { keys } from '../constants/constants';
+import calculate from '../logic/calculate';
+import { StyledButton, StyledH3 } from '../Styled';
 
-const Calculator = () => (
-  <div>
-    <div className="container">
-      <div className="display">0</div>
-      <Button />
+const Calculator = () => {
+  const [num, setNum] = useState(0);
+  const [calculatorData, setcalculatorData] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
+
+  const handleClick = (keyName) => {
+    setcalculatorData((prevData) => {
+      const newData = calculate(prevData, keyName);
+
+      if (newData.next !== null) {
+        setNum(newData.next);
+      } else {
+        setNum(newData.total);
+      }
+
+      return newData;
+    });
+  };
+  return (
+    <div className="calc">
+      <StyledH3 desktop="8rem">Let&apos;s do some math!</StyledH3>
+      <div className="container">
+        <div className="display">{num || 0}</div>
+        <Button handleClick={handleClick} calculatorData={calculatorData} />
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
-const Button = () => (
+const Button = ({ handleClick }) => (
   <>
     {keys.map((key, idx) => (
-      <button
+      <StyledButton
         type="button"
         key={key}
-        className="button"
-        style={{
-          gridColumn: idx === 16 ? 'span 2' : 'auto',
-          backgroundColor:
-            idx === 3 || idx === 7 || idx === 11 || idx === 15 || idx === 18
-              ? '#ffb500'
-              : 'inherit',
-        }}
+        onClick={() => handleClick(key)}
+        idx={idx}
       >
         {key}
-      </button>
+      </StyledButton>
     ))}
   </>
 );
+
+Button.propTypes = {
+  handleClick: PropTypes.func.isRequired,
+};
 
 export default Calculator;
